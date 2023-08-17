@@ -33,18 +33,10 @@ The dataset consists of two sources: `tmdb_5000_credits` and `tmdb_5000_movies`.
 We opted to merge these data sources to leverage the full range of available features.
 
 <p align="left">
-  <img src="images/dataHead.PNG"> 
+  <img src="https://github.com/zach-hb/Predicting-Blockbusters/blob/main/dataHead.PNG"> 
 </p>
 
 <br>
-
-#### Pairwise Plot 
-
-Given the presence of both categorical and continuous features, we employed a pairplot to better visualize relationships and guide our approach to handling these diverse types.
-
-<p align="center">
-  <img src="images/pairwise.PNG" width="900"> 
-</p>
 
 * * * 
 
@@ -74,7 +66,7 @@ To train our models, we randomly divided our data, allocating 75% for training a
 
 #### Decision Tree - Cross Validation Score  
 
-Our initial supervised learning model was the decision tree. We experimented with different depths, including 7 and 3. The decision tree with depth 7 yielded slightly improved results compared to depth 3, potentially due to the increased splits accounting for more features. However, to avoid overfitting, we opted for a moderate number of splits.
+Our initial supervised learning model was the decision tree. We experimented with different depths, including 7. The decision tree with depth 7 yielded slightly improved results, potentially due to the increased splits accounting for more features. However, to avoid overfitting, we opted for a moderate number of splits.
 
 Depth = 7 
 
@@ -82,29 +74,15 @@ Cross validation accuracy = 73%
 
 Accuracy = 80%
 
-<img src="images/decisionTree7.png"/> 
+<img src="https://github.com/zach-hb/Predicting-Blockbusters/blob/main/Images/DecisionTreeCF.png"/> 
 
-<p align="left">
-  <img src="images/decisionTree.PNG" width="300"> 
-</p>
-
-Depth = 3 
-
-Cross validation accuracy = 73%
-
-Accuracy = 79%
-
-<img src="images/decisionTree3.png" height="300"/> 
-
-
-<br>
 
 #### Random Forest Tree Model
 
 Next, we employed the random forest tree model, which consists of multiple decision trees based on random subsamples of the data. As expected, the results were similar to those of the decision tree.
 
 <p align="left">
-  <img src="images/randomForest.PNG" width="300"> 
+  <img src="[images/randomForest.PNG](https://github.com/zach-hb/Predicting-Blockbusters/blob/main/Images/randomforest.png)" width="300"> 
 </p>
 
 <img src="images/randomForest7.png"/>
@@ -115,15 +93,25 @@ Cross validation = 74%
 
 Accuracy = 82%
 
-<img src="images/randomForest3.png"/>
 
-Depth = 3 
+#### #### K-nearest neighbors
 
-Cross validation = 78%
+We also explored the K-nearest neighbors model. It's like having a group of friends nearby who help you decide whether something is similar or different. Instead of following a specific set of rules like the previous decision tree and random forest, K-nearest neighbors just remembers the examples it has seen before and uses them to make new decisions. To make our predictions more reliable and able to handle unusual cases, we considered 100 nearby neighbors instead of the default 5. K-nearest neighbors turned out to be more accurate than both the decision tree and random forest.
 
-Accuracy = 80%
+With 100 neighbors:
 
-<br>
+- Cross validation accuracy: 78%
+- Actual accuracy: 83%
 
+![K-nearest neighbors]("https://github.com/zach-hb/Predicting-Blockbusters/blob/main/Images/KNNCF.png")
 
-####
+#### Support Vector Machine (SVM)
+
+Finally, we tested a model called the support vector machine. It's like drawing a line between two different groups of things to tell them apart. With a linear method, SVM performed similarly or even a bit better than K-nearest neighbors on average. Among all the models we tried, SVM stood out as the best choice for our classification problem.
+
+- Cross validation accuracy: 75%
+- Actual accuracy: 82%
+
+![Support Vector Machine]("https://github.com/zach-hb/Predicting-Blockbusters/blob/main/Images/SVMCF.png")
+
+These models provided insights into predicting movie success, with K-nearest neighbors and SVM offering the most promising results.
