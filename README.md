@@ -32,11 +32,8 @@ The dataset consists of two sources: `tmdb_5000_credits` and `tmdb_5000_movies`.
 
 We opted to merge these data sources to leverage the full range of available features.
 
-<p align="left">
-  <img src="https://github.com/zach-hb/Predicting-Blockbusters/blob/main/dataHead.PNG"> 
-</p>
 
-<br>
+  ![DataSet](https://github.com/zach-hb/Predicting-Blockbusters/blob/main/dataHead.PNG) 
 
 * * * 
 
@@ -74,18 +71,16 @@ Cross validation accuracy = 73%
 
 Accuracy = 80%
 
-<img src="https://github.com/zach-hb/Predicting-Blockbusters/blob/main/Images/DecisionTreeCF.png"/> 
+![Decision Tree](https://github.com/zach-hb/Predicting-Blockbusters/blob/main/Images/DecisionTreeCF.png) 
 
 
 #### Random Forest Tree Model
 
 Next, we employed the random forest tree model, which consists of multiple decision trees based on random subsamples of the data. As expected, the results were similar to those of the decision tree.
 
-<p align="left">
-  <img src="[images/randomForest.PNG](https://github.com/zach-hb/Predicting-Blockbusters/blob/main/Images/randomforest.png)" width="300"> 
-</p>
 
-<img src="images/randomForest7.png"/>
+  ![RandomForest](https://github.com/zach-hb/Predicting-Blockbusters/blob/main/Images/randomforest.png) 
+
 
 Depth = 7 
 
@@ -103,7 +98,7 @@ With 100 neighbors:
 - Cross validation accuracy: 78%
 - Actual accuracy: 83%
 
-![K-nearest neighbors]("https://github.com/zach-hb/Predicting-Blockbusters/blob/main/Images/KNNCF.png")
+![K-nearest neighbors](https://github.com/zach-hb/Predicting-Blockbusters/blob/main/Images/KNNCF.png)
 
 #### Support Vector Machine (SVM)
 
@@ -112,6 +107,6 @@ Finally, we tested a model called the support vector machine. It's like drawing 
 - Cross validation accuracy: 75%
 - Actual accuracy: 82%
 
-![Support Vector Machine]("https://github.com/zach-hb/Predicting-Blockbusters/blob/main/Images/SVMCF.png")
+![Support Vector Machine](https://github.com/zach-hb/Predicting-Blockbusters/blob/main/Images/SVMCF.png)
 
 These models provided insights into predicting movie success, with K-nearest neighbors and SVM offering the most promising results.
