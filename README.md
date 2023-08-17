@@ -98,7 +98,7 @@ With 100 neighbors:
 - Cross validation accuracy: 78%
 - Actual accuracy: 83%
 
-![K-nearest neighbors](https://github.com/zach-hb/Predicting-Blockbusters/blob/main/Images/KNNCF.png)
+  ![K-nearest neighbors](https://github.com/zach-hb/Predicting-Blockbusters/blob/main/Images/KNNCF.png)
 
 #### Support Vector Machine (SVM)
 
@@ -107,6 +107,6 @@ Finally, we tested a model called the support vector machine. It's like drawing 
 - Cross validation accuracy: 75%
 - Actual accuracy: 82%
 
-![Support Vector Machine](https://github.com/zach-hb/Predicting-Blockbusters/blob/main/Images/SVMCF.png)
+  ![Support Vector Machine](https://github.com/zach-hb/Predicting-Blockbusters/blob/main/Images/SVMCF.png)
 
 These models provided insights into predicting movie success, with K-nearest neighbors and SVM offering the most promising results.
