@@ -67,9 +67,9 @@ Our initial supervised learning model was the decision tree. We experimented wit
 
 Depth = 7 
 
-Cross validation accuracy = 73%
+Cross validation accuracy = 77%
 
-Accuracy = 80%
+Accuracy = 79%
 
 ![Decision Tree](https://github.com/zach-hb/Predicting-Blockbusters/blob/main/Images/DecisionTreeCF.png) 
 
@@ -84,9 +84,9 @@ Next, we employed the random forest tree model, which consists of multiple decis
 
 Depth = 7 
 
-Cross validation = 74%
+Cross validation = 76%
 
-Accuracy = 82%
+Accuracy = 79%
 
 
 #### #### K-nearest neighbors
@@ -95,8 +95,8 @@ We also explored the K-nearest neighbors model. It's like having a group of frie
 
 With 100 neighbors:
 
-- Cross validation accuracy: 78%
-- Actual accuracy: 83%
+- Cross validation accuracy: 79%
+- Actual accuracy: 79%
 
   ![K-nearest neighbors](https://github.com/zach-hb/Predicting-Blockbusters/blob/main/Images/KNNCF.png)
 
@@ -104,8 +104,8 @@ With 100 neighbors:
 
 Finally, we tested a model called the support vector machine. It's like drawing a line between two different groups of things to tell them apart. With a linear method, SVM performed similarly or even a bit better than K-nearest neighbors on average. Among all the models we tried, SVM stood out as the best choice for our classification problem.
 
-- Cross validation accuracy: 75%
-- Actual accuracy: 82%
+- Cross validation accuracy: 76%
+- Actual accuracy: 79%
 
   ![Support Vector Machine](https://github.com/zach-hb/Predicting-Blockbusters/blob/main/Images/SVMCF.png)
 
